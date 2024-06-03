@@ -1,0 +1,159 @@
+@font-face{
+    font-family:'p5';
+    src: url('p5hatty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Earwig';
+    src: url('earwig_factory_rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image:url(wfl3glh4e2641.png) ;
+    background-repeat: no-repeat;
+    font-family: 'p5';
+}
+
+
+html{
+    color: red;
+    scroll-behavior: smooth;
+    font-family: 'p5';
+}
+
+
+.Titulo-Cadastro{
+    font-family: 'Earwig';
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    font-size: 50px;
+
+}
+
+
+fieldset{
+    border: none;
+}
+fieldset div{
+    margin-bottom: 20px;
+    
+}
+fieldset label{
+    font-size: 20px;
+}
+.informacoes{
+    gap: 200px;
+    margin-left: 60px;
+}
+.legenda{
+    margin-bottom: 20px;
+    font-size:30px ;
+}
+input{
+    border-radius: 50px;
+}
+input[type='text']{
+    background-color: black;
+    border:1px solid red ;
+    color: white;
+    font-family: 'p5';
+    outline: 0;
+    width: 150px;
+    height: 20px;
+}
+input[type='email']{
+    background-color: black;
+    border:1px solid red ;
+    color: white;
+    font-family: 'p5';
+    outline: 0;
+    width: 150px;
+    height: 20px;
+}
+input[type='date']{
+    background-color: black;
+    border:1px solid red ;
+    color: white;
+    font-family: 'p5';
+    outline: 0;
+    width: 150px;
+    height: 20px;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+}
+
+input[type='password']{
+    background-color: black;
+    border:1px solid red ;
+    color: white;
+    font-family: 'Earwig';
+    outline: 0;
+    width: 150px;
+    height: 20px;
+    
+}
+.cont{
+    position: relative; 
+   
+ }
+ .cont label{
+     display: inline-block;
+ }
+ .cont input{
+     display: block;
+     width: 25%;
+ }
+ .cont a{
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     visibility: hidden;
+ }
+ .cont.erro input{
+     border-color: greenyellow
+ 
+ }
+ .cont.erro a{
+     color: greenyellow;
+     visibility: visible;
+ }
+.coockies{
+    margin-left: 60px;
+
+}
+.coockies input{
+    color: red;
+    
+}
+.botao{
+    margin-top: 30px;
+    margin-left: 60px;
+    
+}
+
+.botao button{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 2px solid red;
+    padding: 3px;
+
+
+}
+

@@ -1,0 +1,121 @@
+/* fontes */
+@font-face {
+  font-family: 'Earwig';
+  src: url('earwig_factory_rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'p5';
+  src: url('p5hatty.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ****************************** */
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none
+  
+}
+
+h1{
+    display: flex;
+    font-size: 50px;
+    font-family:'Earwig';
+    margin-left: 80px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    color: white;
+  }
+
+
+  body {
+    font-family:'p5', Helvetica, sans-serif;
+    background-image: url(dbhb9um-e395d9c3-ac50-47f8-a4cd-06f452a248f7.png);
+    background-repeat: no-repeat; 
+  }
+
+
+/* inserir email e senha */
+.input-email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 7px;
+  
+}
+
+.input-senha{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 80px;
+}
+
+/* *********************** */
+
+h2 {
+  margin-right: 10px; /* Adiciona um espaço entre o texto e o campo de entrada */
+  margin-left: 15px;
+  font-family: 'p5', Helvetica, sans-serif;
+}
+
+.emailsenha{
+  display: flex;
+  align-items: center;
+}
+
+
+input[type="text"] {  
+    border: 1px solid red; 
+    background-color: black;
+    color: white;
+    font-family: 'p5';
+    font-size: large;
+    padding: 15px;
+    outline: 0;
+    width: 234px;
+}
+
+input[type="password"]{
+  border: 1px solid red; 
+    background-color: black;
+    color: white;
+    font-family: 'Earwig';
+    font-size: large;
+    padding: 15px;
+    outline: 0;
+    width: 234px;
+    padding-right: 50px;
+}
+
+.buton > button{
+  background-color: black;
+  width: 110px; 
+  padding: 15px; /* aumentar o tamanho do botão*/
+  color: white;
+  outline: 0;
+  border: none; /*tirar a borda branca do botão */
+  font-family: 'Earwig';
+  font-size: x-large;
+  border-radius: 8px;
+  margin-left: 90px;
+}
+
+.buton > button:first-child {
+  margin-right: -80px;
+}
+
+form {
+  position: relative;
+  padding-top: 300px;
+  
+ 
+}

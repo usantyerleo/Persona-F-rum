@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tópico</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/editar_topico.css') }}">
+</head>
+<body>
+    <h1>Editar Tópico</h1>
+    <form action="{{ url_for('editar_topico', topico_id=topico_id) }}" method="POST">
+        <input type="text" name="novo_texto" value="{{ texto }}" required>
+        <button type="submit">Salvar</button>
+        <a href="{{ url_for('forum_principal') }}">Cancelar</a>
+    </form>
+</body>
+</html>

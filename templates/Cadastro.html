@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Fórum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Cadastro.css') }}">
+</head>
+<body>
+    <div class="Titulo-Cadastro">
+        <h1>Cadastrar Conta</h1>
+    </div>
+    <div class="formulario">
+        <form id="form" action="{{ url_for('cadastro') }}" method="POST">
+            <fieldset class="informacoes">
+                <legend class="legenda"><h2>Digite os dados da sua conta:</h2></legend>
+                <div class="cont">
+                    <label for="Nome">Nome: </label>
+                    <input type="text" minlength="3" id="Nome" name="Nome" required />
+                    <a class="erro-msg">mensagem de erro</a>
+                </div>
+                <div class="cont">
+                    <label for="email">Email: </label>
+                    <input type="email" minlength="10" id="email" name="email" required />
+                    <a class="erro-msg">mensagem de erro</a>
+                </div>
+                <div class="cont">
+                    <label for="idade">Data de nascimento: </label>
+                    <input type="date" id="idade" name="idade" required />
+                    <a class="erro-msg">mensagem do erro</a>
+                </div>
+                <div class="cont">
+                    <label for="senha">Senha: </label>
+                    <input type="password" minlength="5" id="senha" name="senha" required />
+                    <a class="erro-msg">mensagem de erro</a>
+                </div>
+                <div class="cont">
+                    <label for="rsenha">Repita a Senha: </label>
+                    <input type="password" minlength="5" id="rsenha" name="rsenha" required />
+                    <a class="erro-msg">Mensagem de erro</a>
+                </div>
+            </fieldset>
+            <fieldset class="coockies">
+                <legend><h2>Aceita receber os cookies do site?</h2></legend>
+                <label for="coockies">Sim </label>
+                <input type="radio" id="coockies" name="simounao" value="sim" />
+                <label for="cookies1">Não</label>
+                <input type="radio" id="cookies1" name="simounao" value="nao" />
+            </fieldset>
+            <div class="botao">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Reescrever formulário</button>
+            </div>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='JS/Cadastro.js') }}"></script>
+</body>
+</html>

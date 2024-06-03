@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <title>Pagina Apresentação</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='CSS/Reset.css') }}">
+   
+    <link rel="stylesheet" href="{{ url_for('static',     filename='CSS/Landing_PageCSS.css') }}">
+   
+
+</head>
+<body>
+    <header class="cabecalho">
+       <div class="irgrupo">
+        <a href="#grupo">Grupo</a>
+       </div>
+       <div class="irintencao"><a href="#intencaoprojeto">Intenção</a></div>
+       <div class="irconstrucao"><a href="#construcao">Construção</a></div>
+       <div class="irreferencia"> <a href="#referencia">Referencia</a></div>
+       <div class="irprojeto"><a href="#projeto">Projeto</a></div>
+
+    </header>
+
+
+    <div class="grupo" >
+    <h1 id="grupo">Quem Somos? </h1>
+    <p>
+      <div class="descricao">Grupo de 4 alunos, estudantes da area de T.I da faculdade Unifbv Campus Imbiribeira.</div>
+      <p><b>Grupo formado pelos alunos:</b></p>
+      <p>Fellype Augusto de Oliveira Santos </p>
+      <p>Rafael Rocha Arruda </p>
+      <p>Lucas Leonardo Martins Farias </p>
+      <p>Guilherme de Albuquerque Silva Azevedo</p>
+    </div>
+    </p>
+     <p>
+    
+    <div class="informacaoes_Disciplina"><p><b>Disciplina: </b></p>
+     <p>DESENV. WEB EM HTML5, CSS, JAVASCRIPT E PHP </p>
+     <p>Segunda-feira </p>
+     <p>Laboratório 209A</p>
+     </p>
+     <p>
+    
+    <div class="professor"><p><b>Professor: </b></p>
+        <p>   Fausto Gominho </p>
+    </div>
+    </p></div>
+    <div class="intencaoprojeto" id="intencaoprojeto">
+     <h2 >Nossa intenção com o projeto: </h2>
+     <p>
+         Criar um fórum personalizado, com identidade visual e estilo de arte baseado em um jogo eletrônico. O principal intuito do fórum é integrar usuários em temas cotidianos, hobbies, tendências e dentre outros tópicos. isso acontece através de abertura e interação em threads para os usuários, tendo a opção de editar e excluir os comentários.
+         Nosso projeto tem o foco em 3 páginas principais: Página de login, para o acesso à página principal do fórum; caso seja o primeiro contato do usuário, temos uma página de cadastro para o preenchimento dos dados mais importantes. A principal página de acesso do usuário é a página do fórum, na qual toda
+         a interação será feita, hospedando os diversos temas e conversas do fórum. As páginas são renderizadas e gerênciadas através do Flask, assim como a navegação entre elas. Com ajuda de um dicionário em python, que guarda o Email e a senha submetidos da página do cadastro, a validação dos usuários é feita pela página de Login que também acessa este dicionário. O Flask também se responsabiliza pela lógica de abertura de tópicos e edição e exclusão dos comentários. 
+
+
+    </p>
+    </div>
+    <div class="construcao" id="construcao">
+    <h2 >Construção do projeto html: </h2>
+   
+        <ul>
+            <li>Criação da página de login do fórum</li>
+            <li>Criação da página de cadastro do fórum</li>
+            <li>Criação da página principal, utilizada para responder outros usuarios e adicionar thread de assuntos</li>
+            <li>Construção do CSS para as três páginas</li>
+            <li>Construção do Javascript para a página de cadastro</li>
+            <li>Uso do framework Flask para a parte back-end do site</li>
+
+
+        </ul>
+    
+    </div>
+
+    <div class="referencia" id="referencia">
+    <h2>Referências do projeto:</h2>
+    <ul>
+        <li><a href="https://dribbble.com/shots/14521165-Persona-5-Royal-Phan-Site" target="_blank">Página de design e Modelo</a></li>
+        <li><a href="https://www.w3schools.com/Css/" target="_blank">Site de ensino Css</a></li>
+        <li><a href="https://www.youtube.com/watch?v=cudOY_pI2Fo" target="_blank">Video de montagem de projetos html e CSS</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vEwPnjqWQ-g&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw" target="_blank">Video de aprendizagem Javascript</a></li>
+        <li><a href="https://www.youtube.com/watch?v=AP4iDEFYplo&list=PLr9-FeATlrPLsx5904LWpNml0a4aSSA5h" target="_blank">Formulário com Flask</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vRgay-IXeek" target="_blank">Login com Flask</a></li>
+
+
+    </ul>
+
+    </div>
+    <div class="projeto" id="projeto">
+    <h2>Nosso Projeto:</h2>
+    <div class="container-projeto">
+    <div class="projeto-feito">
+        <a href="{{ url_for('login') }}" target="_blank"><img src="https://th.bing.com/th/id/OIP.iixtl3DiPpt0Zm38JoUWQgHaNK?rs=1&pid=ImgDetMain" alt="fórum p5">
+            <h3>Projeto fórum</h3>
+            <div class="informações-projeto">
+                <p>projeto feito utilizando html css javascript</p>
+                <p>ver na página</p>
+            </div>
+        </a>
+        <div class="codigo-fonte">
+        <a href="https://github.com/MdSFelpe/P5-PC" target="_blank"><p>Código fonte</p></a>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    
+</body>
